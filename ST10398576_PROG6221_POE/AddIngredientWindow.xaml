@@ -1,0 +1,32 @@
+﻿<Window x:Class="ST10398576_PROG6221_POE.AddIngredientWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ST10398576_PROG6221_POE"
+        mc:Ignorable="d"
+        Title="Add Ingredient" Height="400" Width="350"
+        >
+
+    <Grid Background="AliceBlue">
+        <TextBlock Margin="10,10,10,326" TextWrapping="Wrap" TextAlignment="Center" Text="Adding An Ingredient" FontSize="20" Width="330" Background="Aquamarine" />
+
+        <TextBlock Margin="27,84,248,262" Text="Name: "/>
+        <TextBox Margin="126,75,24,267" x:Name="NameTextBox"/>
+
+        <TextBlock Margin="27,127,243,224" Text="Unit: "/>
+        <TextBox Margin="126,122,0,0" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" x:Name="AmountTextBox" Height="33"/>
+
+        <TextBlock Margin="27,170,243,180" Text="Measurement: "/>
+        <TextBox Margin="126,160,0,0" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" x:Name="MeasurementTextBox" Height="34"/>
+
+        <TextBlock Margin="27,209,229,138" Text="Calories per unit: " />
+        <TextBox Margin="126,206,0,0" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" x:Name="CaloriesTextBox" Height="29"/>
+        <TextBlock Margin="27,253,229,94" Text="Food Group: " />
+        <TextBox Margin="126,250,0,0" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" x:Name="FoodGroupTextBox" Height="29"/>
+
+        <Button Margin="20,295,180,28" Background="YellowGreen" Click="AddIngredient_Click">Add Ingredient</Button>
+        <Button Margin="193,295,10,28" Background="YellowGreen" Click="Cancel_Click">Cancel</Button>
+
+    </Grid>
+</Window>
